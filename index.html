@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Practice</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3, p{
+            text-align: center;
+        }
+        button {
+            width: 150px;
+        }
+
+        .fruits,
+        .vegetables {
+            border: 1px solid black;
+            margin: 0 30px;
+            width: 40vw;
+            text-align: center;
+        }
+        
+        #fruits,
+        #vegetables{
+            width:175px;
+            margin: auto;
+        }
+        
+        li{
+            text-align: left;
+            text-transform: capitalize;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Ajax Learn</h1>
+    <h2>Click on the buttons below to retrive relevent information.</h2>
+    <p>This is an example of AJAX functions in which you can retrive fruit and vegetable names from JSON files named fruits.json & vegetables.json<p>
+    <div class="container" style="display: flex; justify-content: center;">
+        <div class="fruits">
+            <button type="button" id="fruitBtn" class="btn btn-primary">For Fruits</button>
+            <hr>
+            <h1>Fruits</h1>
+            <hr>
+
+            <ol id="fruits">
+
+            </ol>
+
+        </div>
+        <div class="vegetables">
+            <button type="button" id="vegeBtn" class="btn btn-primary">For Vegetables</button>
+            <hr>
+            <h1>Vegetabels</h1>
+            <hr>
+            <ol id="vegetables">
+
+            </ol>
+        </div>
+    </div>
+
+</body>
+<script src="ajax.js"></script>
+<script src="bootstrap.js"></script></html>
